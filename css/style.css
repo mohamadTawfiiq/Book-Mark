@@ -1,0 +1,65 @@
+body{
+    background-color: #F7ECDE;
+}
+
+header{
+    border-bottom: 2px dotted ;
+}
+
+h1 {
+    font-family: "Pacifico", cursive;
+    font-size: 50px;
+    position: relative;
+    width: fit-content;
+    margin: auto;
+    
+}
+h1::before{
+    content: '';
+    background-color: #FEC260;
+    height: 30%;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    z-index: -1;
+    transition: all .5s;
+}
+
+h1:hover::before{
+    height: 70%;
+}
+
+h2{ 
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    background-clip: text ;
+    -webkit-text-fill-color: transparent;
+    width: fit-content;
+    margin: auto;
+}
+
+.form-control:focus {
+    border-color: #d99c39;
+    box-shadow: 0 0 0 .25rem #fec26055;
+}
+
+section.text-center{
+    border-bottom: 2px dotted ;
+}
+
+table{
+    background-color: white;
+    text-align: center;
+    width: 100%;
+}
+
+table thead tr{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+table thead tr th.py-3{
+    width: 10%;
+}
+table thead tr th[webname] {
+    width: 40%;
+}
+
